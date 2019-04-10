@@ -50,7 +50,11 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xmx1024m</vmArgs>
+
+<!--  RUDY -->
+      <vmArgs>-Xmx4096m
+-Xms2048m</vmArgs>
+
       <vmArgsLin>-Dorg.eclipse.swt.browser.XULRunnerPath=/opt/xulrunner</vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread</vmArgsMac>
    </launcherArgs>
@@ -94,7 +98,7 @@
       <feature id="org.eclipse.emf.common"/>
 
       <feature id="feature.net.tourbook.ext.eclipse" 		installMode="root"/>
-      <feature id="feature.net.tourbook.ext.eclipse.nl" 	installMode="root"/>
+<!--  RUDY          <feature id="feature.net.tourbook.ext.eclipse.nl" 	installMode="root"/> -->
       <feature id="feature.net.tourbook.ext.derby" 		installMode="root"/>
       <feature id="feature.net.tourbook.ext.ejb3" 			installMode="root"/>
       <feature id="feature.net.tourbook.ext.jars" 			installMode="root"/>
